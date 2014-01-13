@@ -26,8 +26,12 @@ var app = angular.module('aidangee', ['ngRoute', 'directives', 'ui.bootstrap']);
 		//redirect to login if url route not set
 		$routeProvider.otherwise(
 		{
-			redirectTo: '/home',	
+			redirectTo: '/home',
+			templateUrl: 'home/index.html',
+			controller: 'homeCntl'	
+
 		});
+
 
 
 	}]);
