@@ -13,7 +13,7 @@ var app = angular.module('aidangee', ['ngRoute', 'directives', 'ui.bootstrap']);
 		});
 		$routeProvider.when('/examples',
 		{
-			templateUrl: 'exmaples/index.html',
+			templateUrl: 'examples/index.html',
 			controller: 'examplesCntl',
 			title: 'Examples'
 		});

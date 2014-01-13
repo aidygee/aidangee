@@ -1,14 +1,35 @@
-.menu-choice{
-	height:300px;
-	display: table; 
-	position: relative; 
+.intro-section{
+	padding:5%;
 	overflow: hidden;
-	padding: 10px;
-	background-color: rgba(156,192,0,0.5);
+}
+.title-wrapper{
+	float: left;	
+}
+.my-picture{
+	float:right;
+}
+.aboutMe-section{
+	padding: 5%;
+	overflow: hidden;
+	background-color: #fff;
+}
+.whatIDo-section{
+	padding:5%;
+
 }
 
-.menu-choice a{
-	display: table-cell; 
-	vertical-align: middle;
+.skill-box{
+	width:30%;
+	padding:1.515%;
+	margin:auto;
+	float:left;
+	text-align: center;
+}
+.skill-table {
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+}
+.section-title{
 	text-align: center;
 }
