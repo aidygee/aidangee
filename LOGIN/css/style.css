@@ -14,3 +14,9 @@
 .login-form input{
 	width: 100%;
 }
+
+.login-button{
+	position: absolute;
+	right:0;
+	top:0;
+}
