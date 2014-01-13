@@ -1,11 +1,11 @@
-var iplod = angular.module('iplod');
+var app = angular.module('aidangee');
 
-iplod.controller('loginCntl',
+app.controller('loginCntl',
 	function($scope){
 
 	});
 
-iplod.controller('formCntl',
+app.controller('formCntl',
 	function($scope){
 
 	});

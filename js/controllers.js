@@ -1,9 +1,9 @@
 /* controllers for whole app */
 
 
-var iplod = angular.module('iplod');
+var app = angular.module('aidangee');
 
-iplod.controller('appCntl',[ '$scope', '$routeParams',
+app.controller('appCntl',[ '$scope', '$routeParams',
 	function($scope, $routeParams){
 	}]
 

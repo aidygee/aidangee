@@ -1,27 +1,32 @@
 //bootstrap application
-var iplod = angular.module('iplod', ['ngRoute', 'directives', 'ui.bootstrap']);
+var app = angular.module('aidangee', ['ngRoute', 'directives', 'ui.bootstrap']);
 
 //set configuration for routes
-	iplod.config(['$routeProvider', 
+	app.config(['$routeProvider', 
 	function($routeProvider){
 
-		$routeProvider.when('/menu',
+		$routeProvider.when('/login',
 		{
-			templateUrl: 'menu/index.html',
-			controller: 'menuCntl',
+			templateUrl: 'login/index.html',
+			controller: 'loginCntl',
 			title:"Login"
 		});
-		$routeProvider.when('/incidents',
+		$routeProvider.when('/examples',
 		{
-			templateUrl: 'incidents/index.html',
-			controller: 'incidentsCntl',
-			title: 'Incidents'
+			templateUrl: 'exmaples/index.html',
+			controller: 'examplesCntl',
+			title: 'Examples'
+		});
+		$routeProvider.when('/blog',
+		{
+			templateUrl: 'blog/index.html',
+			controller: 'blogCntl',
+			title: 'Blog'
 		});
 		//redirect to login if url route not set
 		$routeProvider.otherwise(
 		{
-			redirectTo: '/menu',
-			
+			redirectTo: '/home',	
 		});
 
 

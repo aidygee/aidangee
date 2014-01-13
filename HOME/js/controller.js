@@ -1,6 +1,6 @@
-var iplod = angular.module('iplod');
+var app = angular.module('aidangee');
 
-iplod.controller('menuCntl',
+app.controller('homeCntl',
 	function($scope){
 
 	});
