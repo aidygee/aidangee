@@ -1,0 +1,16 @@
+.login{
+	width:100%;
+}
+
+.login-form{
+	width:200px !important;
+	margin: auto;
+	margin-top: 200px;
+	padding:50px;
+	background-color: #9EC400;
+	border-radius: 5px;
+}
+
+.login-form input{
+	width: 100%;
+}

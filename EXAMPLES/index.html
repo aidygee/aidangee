@@ -1,0 +1,41 @@
+<div class="app-wrapper">
+	<a class="back-to-menu" ng-click="save()"><img src="images/back-to-menu.png" height="40px"/></a>
+
+	<div class="collection" ng-controller="collectionCntl">
+		<div class="collection-video" ng-repeat="video in collection" >
+			<h2 editable="video.name" class="video-title"> {{video.name}} </h2>
+			<video id="{{video.id}}" class="video-js vjs-default-skin"
+  controls preload="auto" width="260" height="200" data-setup='{}'>
+	  			<source src="{{video.directory}}" type="video/mp4">
+	  			Your browser does not support the video tag.
+			</video>
+			<button class="remove-button" ng-click="remove($index)"> x </button>
+		</div>
+	</div>
+
+
+
+	<div class="evidence-panel" ng-controller="evidenceCntl">
+		<div class="search">
+			<input type="search" placeholder="search"/>
+		</div>
+		<div class="evidence-container">
+			<div class="evidence-video" ng-repeat="video in media">
+				<video id="{{video.id}}" class="video-js vjs-default-skin"
+  controls preload="auto" width="260" height="200" data-setup='{}'>
+		  			<source src="{{video.directory}}" type="video/mp4">
+		  			Your browser does not support the video tag.
+				</video>
+				<button ng-click="add(video)"> Add </button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="controls" ng-controller="controlsCntl">
+
+	</div>
+
+</div>
